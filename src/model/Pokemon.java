@@ -1,3 +1,4 @@
+package model; 
 
 public class Pokemon {
     private String nombre;
