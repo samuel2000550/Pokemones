@@ -4,6 +4,8 @@ import model.Controller;
 
 public class Main {
 
+ private Controller controller; 
+
  
 
     public static void main(String[] args) {
@@ -12,7 +14,7 @@ public class Main {
 
         System.out.print("¿Cuántos pokemones quieres registrar? ");
         int cantidad = sc.nextInt();
-        sc.nextLine(); // limpiar buffer
+        sc.nextLine(); 
 
         for (int i = 0; i < cantidad; i++) {
             System.out.println("\n--- Registro del Pokémon #" + (i + 1) + " ---");
@@ -29,7 +31,7 @@ public class Main {
             controller.agregarPokemon(nombre, tipo, habilidad);
         }
 
-        System.out.println("\n✅ Pokemones registrados con éxito.\n");
+        System.out.println(" Pokemones registrados con éxito.");
         System.out.println(controller.mostrarPokemones());
 
         sc.close();
